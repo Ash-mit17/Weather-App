@@ -33,7 +33,7 @@ app.post("/1",(req,res)=>{
       url: 'https://ip-geolocation-ipwhois-io.p.rapidapi.com/json/',
       params: {ip:`${ipAddress}`},
       headers: {
-        'X-RapidAPI-Key': 'e0670ddd02mshf115f44230010dfp1efb54jsndfc518b6236f',
+        'X-RapidAPI-Key': `${process.env.rapidkey}`,
         'X-RapidAPI-Host': 'ip-geolocation-ipwhois-io.p.rapidapi.com'
       }
     };
