@@ -17,7 +17,7 @@ app.set('view engine', 'ejs');
 app.use(express.static("public"));
 
 app.get("/",(req,res)=>{
-    ipAddress = req.socket.remoteAddress;
+    //ipAddress = req.socket.remoteAddress;
     res.sendFile(__dirname+"/index.html");
 })
 
@@ -102,6 +102,6 @@ app.post("/",(req,res)=>{
 
 
 
-app.listen(3000,(req,res)=>{
+app.listen(4000,(req,res)=>{
     console.log("Server is live on port 3000")
 })
