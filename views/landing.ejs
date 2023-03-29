@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles1.css">
+    <title>WeatherApp</title>
+</head>
+<body">
+    <div class="container">
+        <div class="header">Weather Details</div>
+        <div class="box">
+            <div class="box1">Place : <%= name %></div>
+            <div class="box1">Temperature : <%= tempCn %> &#8451</div>
+            <div class="box1">Humidity : <%= humidity %></div>
+            <div class="box1"><%= tempDesc %></div>
+            <img src="<%= source %> " alt="" srcset="" class="box1">
+        </div>
+    </div>
+</body>
+</html>

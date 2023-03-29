@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Delicious Handrawn', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    background-image: url("back3.jpg");
+    background-size: 100% 100%;
+    color:rgb(9, 224, 134);
+    font-weight: 600;
+    height: 100%;
+}
+
+.img1{
+    height: 20px;
+    width: 20px;
+}
+
+.container{
+    z-index: 2;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    opacity: .8;
+}
+
+hr{
+    border-top: 4px dotted rgb(216, 100, 6);
+    width: 40%;
+    border-bottom: 0px;
+}
+
+.form{
+    display: inline-block;
+    padding: 20px 0;
+}
+
+.waBox{
+    height: 450px;
+    width:  500px;
+    background-color: #02735E;
+    box-shadow: 7px 7px 3px #731702;
+}
+
+.heading{
+    display: block;
+    padding: 10px 0;
+    font-size: 1.8rem;
+}
+
+#ipt{
+    padding: 0px 10px;
+    width: 120px;
+    height: 35px;
+}
+
+.btn{
+    padding: 20px 0;
+    display: inline-block;
+    text-align: center;
+    height: 10px;
+    width: 80px;
+}
+
+.btn1{
+    font-size: 15px;
+}
+
+.btn2{
+    display: inline-block;
+    text-align: center;
+}
