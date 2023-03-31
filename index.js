@@ -5,9 +5,8 @@ const https=require('https')
 const axios = require("axios");
 require('dotenv').config();
 
-const unirest = require("unirest");
 
-var ipAddress="150.129.63.34"
+var ipAddress=process.env.ip;
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
