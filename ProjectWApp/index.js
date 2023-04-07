@@ -47,10 +47,10 @@ app.post("/1",(req,res)=>{
                 
                 const weatherData1=JSON.parse(data)
                 // const name1=weatherData1.city
-                console.log(weatherData1)
+                
                 // console.log(name1)
                 const name1=weatherData1.name
-                console.log(name1)
+                
                 const temp=weatherData1.main.feels_like;
                 const weatherDescription=weatherData1.weather[0].description
                 const icon=weatherData1.weather[0].icon
@@ -79,7 +79,7 @@ app.post("/",(req,res)=>{
 
         response.on("data",(data)=>{
             const weatherData=JSON.parse(data)
-            console.log(weatherData)
+            
             const temp=weatherData.main.feels_like;
             const weatherDescription=weatherData.weather[0].description
             const icon=weatherData.weather[0].icon
@@ -102,5 +102,5 @@ app.post("/",(req,res)=>{
 
 
 app.listen(4000,(req,res)=>{
-    console.log("Server is live on port 3000")
+    console.log("Server is live on port 4000")
 })
