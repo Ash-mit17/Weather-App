@@ -6,7 +6,7 @@ const axios = require("axios");
 require('dotenv').config();               
 
 
-var ipAddress=process.env.ip;
+var ipAddress;
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
@@ -16,7 +16,7 @@ app.set('view engine', 'ejs');
 app.use(express.static("public"));
 
 app.get("/",(req,res)=>{
-    //ipAddress = req.socket.remoteAddress;
+    ipAddress = req.socket.remoteAddress;
     res.sendFile(__dirname+"/index.html");
 })
 
